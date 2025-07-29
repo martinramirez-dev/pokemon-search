@@ -1,0 +1,285 @@
+/* 📌 Fuentes */
+@font-face {
+    font-family: 'pokemon';
+    src: url('Fonts/Pokemon Solid.ttf');
+}
+
+@font-face {
+    font-family: '8bit';
+    src: url('Fonts/Pokemon Classic.ttf');
+}
+
+/* 📌 Configuración General */
+* {
+    font-family: '8bit', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9bbc0f; /* Verde Game Boy */
+    color: #0f380f; /* Verde oscuro */
+    line-height: 1.2;
+    padding: 20px;
+}
+
+/* 📌 Header */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #0f380f; /* Rojo Pokémon */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #0f380f; /* Borde pixelado */
+    box-shadow: 0 4px 0 #306230; /* Sombra retro */
+    z-index: 10;
+}
+
+header h1 {
+    font-family: 'pokemon', sans-serif;
+    color: #8bac0f; /* Amarillo Pokémon */
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 0 #306230;
+}
+
+/* 📌 Formulario */
+.form-cont {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form-cont h1 {
+    font-size: 2.5rem;
+    color: #0f380f;
+    text-shadow: 2px 2px 0 #306230;
+    margin-bottom: 20px;
+}
+
+.form-cont .form-id {
+    max-width: 500px;
+    background-color: #8bac0f; /* Verde claro Game Boy */
+    padding: 30px;
+    border: 4px solid #0f380f;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #306230;
+}
+
+.form-cont label {
+    font-size: 1.2rem;
+    color: #0f380f;
+}
+
+.form-cont input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 3px solid #0f380f;
+    border-radius: 4px;
+    font-family: '8bit', sans-serif;
+    color: #0f380f;
+}
+
+.form-cont button {
+    padding: 10px 20px;
+    background-color: #0f380f;
+    color: #fff;
+    border: 3px solid #306230;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.form-cont button:hover {
+    transform: scale(1.1);
+    background-color: #ffcb05;
+    color: #0f380f;
+}
+
+/* 📌 Resultados */
+.form-results {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-results div {
+    width: 250px;
+    background-color: #8bac0f;
+    padding: 20px;
+    border: 4px solid #0f380f;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #306230;
+    text-align: center;
+    transition: transform 0.1s ease;
+}
+
+.form-results div:hover {
+    transform: scale(1.05);
+}
+
+.form-results img {
+    width: 100px;
+    image-rendering: pixelated; /* Efecto 8-bit */
+}
+
+.form-results button {
+    padding: 8px 16px;
+    background-color: #306230;
+    color: #fff;
+    border: 2px solid #0f380f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-results button:hover {
+    background-color: #ffcb05;
+    color: #0f380f;
+}
+
+/* 📌 Random Pokemons */
+.random {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.random h1 {
+    font-size: 2.5rem;
+    color: #0f380f;
+    text-shadow: 2px 2px 0 #306230;
+    margin-bottom: 20px;
+}
+
+.random-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.random-cont div {
+    background-color: #8bac0f;
+    padding: 20px;
+    border: 4px solid #0f380f;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #306230;
+    text-align: center;
+    transition: transform 0.1s ease;
+}
+
+.random-cont div:hover {
+    transform: scale(1.05);
+}
+
+.random-cont img {
+    width: 100px;
+    image-rendering: pixelated;
+}
+
+.random-cont button {
+    padding: 8px 16px;
+    background-color: #306230;
+    color: #fff;
+    border: 2px solid #0f380f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.random-cont button:hover {
+    background-color: #ffcb05;
+    color: #0f380f;
+}
+
+/* 📌 Favorites */
+.favorites {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.favorites h1 {
+    font-size: 2.5rem;
+    color: #0f380f;
+    text-shadow: 2px 2px 0 #306230;
+    margin-bottom: 20px;
+}
+
+.favorites-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.favorites-cont div {
+    background-color: #8bac0f;
+    padding: 20px;
+    border: 4px solid #0f380f;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #306230;
+    text-align: center;
+    transition: transform 0.1s ease;
+}
+
+.favorites-cont div:hover {
+    transform: scale(1.05);
+}
+
+.favorites-cont img {
+    width: 100px;
+    image-rendering: pixelated;
+}
+
+/* 📌 Footer */
+footer {
+    width: 100%;
+    background-color: #0f380f;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 4px solid #0f380f;
+    box-shadow: 0 -4px 0 #306230;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    color: #8bac0f;
+    text-shadow: 2px 2px 0 #306230;
+}
+
+/* 📌 Responsividad */
+@media (max-width: 600px) {
+    .form-cont h1,
+    .random h1,
+    .favorites h1 {
+        font-size: 2rem;
+    }
+
+    .form-cont .form-id {
+        padding: 20px;
+    }
+
+    .form-results div,
+    .random-cont div,
+    .favorites-cont div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .form-results,
+    .random-cont,
+    .favorites-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
