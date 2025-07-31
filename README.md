@@ -30,6 +30,12 @@ The design is inspired by the nostalgic look of the **original Game Boy**, using
 <img width="1265" height="547" alt="image" src="https://github.com/user-attachments/assets/a6ee44fd-51b9-4438-b028-636261457e65" />
 <img width="1265" height="363" alt="image" src="https://github.com/user-attachments/assets/d48ef58a-7f3a-431c-b47a-e0f2ce0cc0f4" />
 
+## 📬 Contact  
+If you want to connect:
+
+📧 **Email:** devmartinramirez@gmail.com  
+📱 **WhatsApp:** +54 9 383 4193832
+
 ## 📁 Folder Structure
 
 ```plaintext
